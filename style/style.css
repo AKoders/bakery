@@ -1,0 +1,115 @@
+
+
+*{
+    padding: 0;
+    margin: 0;
+  }
+
+html {
+    background: url(../img/top-view-of-basket-full-of-breads-as-baguette-bagel-rye-with-sunflower-seeds-on-black-surface.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+
+    
+
+}
+
+header{
+    width:100.7%;
+    margin:-10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 55px;
+    background-color: #f6f6fa6c;
+    transition: 3.5s;
+}
+
+header:hover{
+    background-color: #f6f6fa;
+    transition: 0.5s;
+}
+
+
+
+
+.container {
+    width: 100%;
+    max-width: 1024px; /*максимальная ширина может иметь другое значение*/
+    padding: 10px 15px;
+    margin: 0 auto;
+}
+
+.container:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.logo {
+    float: left;
+}
+
+nav {
+    float: center;
+}
+
+ul{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+li{
+    display:block;
+    padding: 0 20px;
+    color: #fff;
+    font-size: 15px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    transition: 5s;
+}
+
+li a {
+    text-decoration: none;
+    line-height: 38px; /*Выравниваем строки меню по логотипу*/
+    transition: 0.5s;
+}
+
+ul:hover li a{
+    filter:blur(5px);
+}
+
+ul:hover li a:hover{
+font-size: 20px;
+filter: blur(0px);
+background-color: #ede739;
+border-radius: 5px;
+padding: 0 25px;
+}
+
+
+
+.main{
+    
+    border-radius: 10px;
+    margin: 25px;
+   background-color: rgba(255, 255, 255, 0.5);
+
+}
+
+#hello{
+   
+    background-color:  #f6f6fa6c;
+    margin: 0 0 10px 0;
+    padding: 10px 10 10 10;
+    border-radius: 20px;
+}
+
+#hello:hover{
+    background-color:  #f6f6fa;
+    transition: 0.5s;
+
+}
+
+ 
