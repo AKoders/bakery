@@ -1,0 +1,215 @@
+
+
+*{
+    padding: 0;
+    margin: 0;
+  }
+
+body {
+    background: url(../img/top-view-of-basket-full-of-breads-as-baguette-bagel-rye-with-sunflower-seeds-on-black-surface.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+
+    
+
+}
+
+header{
+    width:100.7%;
+    margin:-9px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    background-color: #f6f6fa6c;
+    transition: 3.5s;
+}
+
+header:hover{
+    background-color: #f6f6fa;
+    transition: 0.5s;
+}
+
+
+
+
+.container {
+    width: 100%;
+    max-width: 1024px; /*максимальная ширина может иметь другое значение*/
+    padding: 10px 15px;
+    margin: 0 auto;
+}
+
+.container:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.logo {
+    margin: 20px -40px 0px 0px;
+    float: left;
+}
+
+
+
+nav {
+    width: 69%;
+    margin: -50px 350px 0 0px;
+    float: center;
+}
+
+.loginForm {
+    height: 100px;
+    width: 250px;
+    margin: 10px 75px 0 0px;
+    padding: 0px 10px 0 0px;
+    background: #f6f6faaf;
+    border:#4e8598;
+    border-style: dotted;
+    border-radius: 20px;
+    float: right;
+}
+
+#basket{
+    position: relative;
+	
+    float: left;
+    margin: 10;
+}
+
+#countShop{
+    position: absolute;
+	top: 22px;
+	left: 27;
+	width: 42%;
+  
+}
+
+#buttonFormLogin{
+    display:inline-block;
+    
+    font-size: 14pt;
+    margin: -60 0 50 110;
+ 
+}
+
+#loginButton{
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 1.5s;
+    
+}
+
+#loginButton:hover{
+    background-color: #fdae0480;
+    
+    transition: 1.5s;
+    
+}
+
+ul{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+li{
+    display:block;
+    padding: 0 20px;
+    color: #fff;
+    font-size: 15px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    transition: 5s;
+}
+
+li a {
+    text-decoration: none;
+    line-height: 38px; /*Выравниваем строки меню по логотипу*/
+    transition: 0.5s;
+}
+
+ul:hover li a{
+    filter:blur(5px);
+}
+
+ul:hover li a:hover{
+font-size: 20px;
+filter: blur(0px);
+background-color: #ede739;
+border-radius: 5px;
+padding: 0 25px;
+}
+
+
+
+.main{
+    
+    border-radius: 10px;
+    margin: 25px;
+   background-color: rgba(255, 255, 255, 0.5);
+
+}
+
+
+ 
+
+
+
+
+
+#phones_bakery{
+    background: #f6f6faaf;
+    width: 81.7%;
+    padding: 10px;
+    border-radius: 2px;
+    margin: 60px 60px 60px  200px;
+}
+
+
+
+#telephone{
+    padding-left: 2px;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    color: #4e8598;
+    text-decoration: none;
+    margin: 0 25 0 0;
+    transition: 1.5s;
+}
+
+#telephone:hover{
+background-color: #fdae0480;
+transition: 1.5s;
+}
+
+
+#icon_phone{
+    display: inline-block;
+    vertical-align: middle;
+
+}
+
+
+
+
+
+
+
+
+
+#hello{
+   
+    background-color:  #f6f6fa6c;
+    margin: 0 0 10px 0;
+    padding: 10px 10 10 10;
+    border-radius: 20px;
+}
+
+#hello:hover{
+    background-color:  #f6f6fa;
+    transition: 0.5s;
+
+}
