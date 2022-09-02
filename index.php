@@ -24,6 +24,69 @@
 
 
 <body>
+<!-- Всплывающие окна входа и регистрации начало раздела -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModal" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="loginModal"> Вход в личный кабинет</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <form name="loginForm" method="POST" >
+          <div class="modal-body" >
+            <label>Логин:</label>
+              <input type="text" class="form-control" id="loginNameUser" placeholder="Введите логин" title="Введите логин">
+            <label>Пароль:</label>
+              <input type="password" class="form-control" id="passwordUser" placeholder="Введите пароль" title="Введите пароль">
+          
+          <div >
+            <a href="" id="buttonRegAndRecPassUser">Зарегистрироваться</a>
+            <a href="" id="buttonRegAndRecPassUser">Напомнить пароль</a>   
+          </div>
+
+          </div>
+      </form>
+      
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Отмена</button>
+        <button type="post" class="btn btn-primary">Войти</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModal" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="registerModal">Регистрация нового пользователя</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <form name="loginForm" method="POST" >
+          <div class="modal-body" >
+            <label>Логин:</label>
+              <input type="text" class="form-control" id="loginNameUser" placeholder="Введите логин" title="Введите логин">
+            <label>Пароль:</label>
+              <input type="password" class="form-control" id="passwordUser" placeholder="Введите пароль" title="Введите пароль">
+          
+          <div >
+            <a href="" id="buttonRegAndRecPassUser">Зарегистрироваться</a>
+            <a href="" id="buttonRegAndRecPassUser">Напомнить пароль</a>   
+          </div>
+
+          </div>
+      </form>
+      
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Отмена</button>
+        <button type="post" class="btn btn-primary">Войти</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Всплывающие окна входа и регистрации конец раздела -->
+
 
 
 <header class="header">
@@ -72,7 +135,7 @@
 
         <div id="buttonFormLogin">
             <div ><a href="" id="loginButton" data-bs-toggle="modal"  data-bs-target="#loginModal">Войти</a></div>
-            <div ><a href="" id="loginButton">Регистрация</a></div>
+            <div ><a href="" id="loginButton" data-bs-toggle="modal"  data-bs-target="#registerModal">Регистрация</a></div>
             <div>
         </div>
 
@@ -84,23 +147,7 @@
 
 
 
-    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
-</div>
+    
 
 
 
