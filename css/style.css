@@ -229,3 +229,25 @@ transition: 1.5s;
     background-color: #fdae0480;
     transition: 1.5s;
 }
+
+
+#userAgreement{
+    text-decoration: none;
+    float:right;
+    margin: 10px 0px 0px 0px;
+    border-radius: 2px;
+    transition: 1.5s;
+}
+
+#userAgreementLink{
+    text-decoration: none;
+    padding: 0px 5px 0px 5px;
+    transition: 1.5s;
+}
+
+#userAgreementLink:hover{
+    border-radius: 2px;
+    background-color: #fdae0480;
+    transition: 1.5s;
+}
+

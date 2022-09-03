@@ -24,7 +24,7 @@
 
 
 <body>
-<!-- Всплывающие окна входа и регистрации начало раздела -->
+<!-- входа, регистрации пользовательского соглашения -->
 <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModal" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
@@ -40,8 +40,8 @@
               <input type="password" class="form-control" id="passwordUser" placeholder="Введите пароль" title="Введите пароль">
           
           <div >
-            <a href="" id="buttonRegAndRecPassUser">Зарегистрироваться</a>
-            <a href="" id="buttonRegAndRecPassUser">Напомнить пароль</a>   
+            <a href="#" id="buttonRegAndRecPassUser"   data-bs-toggle="modal"  data-bs-target="#registerModal">Зарегистрироваться</a>
+            <a href="#"  id="buttonRegAndRecPassUser">Напомнить пароль</a>   
           </div>
 
           </div>
@@ -63,29 +63,94 @@
         <h5 class="modal-title" id="registerModal">Регистрация нового пользователя</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
-      <form name="loginForm" method="POST" >
+      <form name="registerForm" method="POST" >
           <div class="modal-body" >
-            <label>Логин:</label>
-              <input type="text" class="form-control" id="loginNameUser" placeholder="Введите логин" title="Введите логин">
-            <label>Пароль:</label>
-              <input type="password" class="form-control" id="passwordUser" placeholder="Введите пароль" title="Введите пароль">
+            <label>Название магазина:</label>
+              <input type="text" class="form-control" id="nameShopRegister" placeholder="Введите название магазина" title="Введите логин">
+              <label>Представитель:</label>
+              <input type="text" class="form-control" id="fioAgentRegister" placeholder="Введите ФИО представителя" title="Введите логин">
+              <label>Номер телефона:</label>
+              <input type="text" class="form-control" id="telephoneRegister" placeholder="Введите логин" title="Введите логин">
+              <label>Email:</label>
+              <input type="text" class="form-control" id="emailRegister" placeholder="Введите email" title="Введите логин">
+
+              
+              <label>Логин:</label>
+              <input type="text" class="form-control" id="loginNameRegister" placeholder="Введите логин" title="Введите логин">
+
+            
+              <label>Пароль:</label>
+              <input type="password" class="form-control" id="passwordRegister" placeholder="Введите пароль" title="Введите пароль">
           
           <div >
-            <a href="" id="buttonRegAndRecPassUser">Зарегистрироваться</a>
-            <a href="" id="buttonRegAndRecPassUser">Напомнить пароль</a>   
+          <div class="form-check" id="userAgreement">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1" >Я согласен с   <a href="" id="userAgreementLink" data-bs-toggle="modal"  data-bs-target="#userAgreementsModal">пользовательским соглашением.</a> </label> 
           </div>
+        </div>
 
           </div>
       </form>
       
-      <div class="modal-footer">
+      <div class="modal-footer" >
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Отмена</button>
-        <button type="post" class="btn btn-primary">Войти</button>
+        <button type="post" class="btn btn-primary">Зарегистрироваться</button>
       </div>
     </div>
   </div>
 </div>
-<!-- Всплывающие окна входа и регистрации конец раздела -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="modal fade" data-bs-backdrop="static" id="userAgreementsModal"  aria-labelledby="userAgreementsModal" >
+  <div class="modal-dialog modal-dialog-scrollable" >
+    <div class="modal-content" id="userAgreements">
+      <div class="modal-header">
+        <h5 class="modal-title" id="userAgreementsModal" > Пользовательское соглашение</h5>
+        <a  data-bs-toggle="modal"  data-bs-target="#registerModal"><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></a>
+      </div>
+      <div class="modal-body">
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Это некоторый заполнитель, чтобы показать поведение прокрутки для модальных окон. </font><font style="vertical-align: inherit;">Мы используем повторяющиеся разрывы строк, чтобы продемонстрировать, как содержимое может превышать минимальную внутреннюю высоту, тем самым показывая внутреннюю прокрутку. </font><font style="vertical-align: inherit;">Когда содержимое становится длиннее предопределенной максимальной высоты модального окна, содержимое будет обрезано и прокручивается внутри модального окна.</font></font></p>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Этот контент должен появиться внизу после прокрутки.</font></font></p>
+      </div>
+
+
+    
+      <div class="modal-footer">
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+<!-- Всплывающие окна входа, регистрации пользовательского соглашения конец раздела -->
 
 
 
@@ -134,8 +199,8 @@
         </div>
 
         <div id="buttonFormLogin">
-            <div ><a href="" id="loginButton" data-bs-toggle="modal"  data-bs-target="#loginModal">Войти</a></div>
-            <div ><a href="" id="loginButton" data-bs-toggle="modal"  data-bs-target="#registerModal">Регистрация</a></div>
+            <div ><a href="#" id="loginButton" data-bs-toggle="modal"  data-bs-target="#loginModal">Войти</a></div>
+            <div ><a href="#" id="loginButton" data-bs-toggle="modal"  data-bs-target="#registerModal">Регистрация</a></div>
             <div>
         </div>
 
