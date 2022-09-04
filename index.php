@@ -16,10 +16,17 @@
     <title>Троицкая пекарня - главная страница</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/fonts.css" >
     <link rel="stylesheet" href="css/style.css" >
+    
 
     <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
+
+
+
+
 </head>
 
 
@@ -152,6 +159,13 @@
 
 <!-- Всплывающие окна входа, регистрации пользовательского соглашения конец раздела -->
 
+<div class="progressbarPage">
+  <div class="progressbarPageLine">
+
+  </div>
+</div>
+
+
 
 
 <header class="header">
@@ -161,7 +175,7 @@
         <div id="phones_bakery">
             
             <img id="icon_phone" src="img/home_phone_icon.png" title="Мобильный телефон">
-            <a id="telephone" href="tel:+3805011111111" title="Совершить звонок">+3805011111111</a>
+            <a id="telephone" href="tel:+3805011111111" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Tooltip on right" title="Совершить звонок">+3805011111111</a>
            
             <img id="icon_phone" src="img/viber_icon.png" title="Наш вайбер">
             <a id="telephone" href="viber://chat?number=+3805011111111" title="Начать чат">+3805011111111</a>
@@ -225,9 +239,22 @@
 
 <div class="main">
     <div class="container">
-        <div id="hello"><p>Добро пожаловать</p> </div>
+        <div id="hello">
+          
+
+        <div>
+          <h2 id="fontHeadingStyle">Наша продукция</h2>
+          <p>ghjgjgjhgjgjgjgjghjgjhghjgjgjgjgjhgjgjgjgjghjjgjh</p>
+        </div>
+
+        
+
+
+
+
+        </div>
         <div id="hello"><p>Добро пожаловатьвыавыаывавыаовыраорвыоларвылравылраывауцгш3тшщоуклоеуьаольку
-            уклеуокеошукщоещшукоешщкуоещокуещукощеукоещукоещукоещкуоещукоещкуоеущкоеущкДобро пожаловатьвыавыаывавыаовыраорвыоларвылравылраывауцгш3тшщоуклоеуьаольку
+            уклеуокеошукщоещшукоешщкуоещокуещукощеукоещукоещукоещкуоещукоещкуоеущкоеущкДобро пожаловатьвыавыаывавыаовыраорвыоларвылравылраывауцгш3тшщоуклоеуьаолькуыаовыраорвыоларвылравылраывауцгш3тшщоуклоеуьаольку
             уклеуокеошукщоещшукоешщкуоещокуещукощеукоещукоещукоещкуоещукоещкуоеущкоеущкДобро пожаловатьвыавыаывавыаовыраорвыоларвылравылраывауцгш3тшщоуклоеуьаольку
             уклеуокеошукщоещшукоешщкуоещокуещукощеукоещукоещукоещкуоещукоещкуоеущкоеущкДобро пожаловатьвыавыаывавыаовыраорвыоларвылравылраывауцгш3тшщоуклоеуьаольку
             уклеуокеошукщоещшукоешщкуоещокуещукощеукоещукоещукоещкуоещукоещкуоеущкоеущкДобро пожаловатьвыавыаывавыаовыраорвыоларвылравылраывауцгш3тшщоуклоеуьаольку
@@ -270,7 +297,31 @@
 
 
 
-<footer><div class="container"></div></footer>
+<footer>
+  <div class="container">
+
+    <div>
+
+    <p>&copy;2000 - <?php echo date("Y"); ?>. Троицкая пекарня - самая вкусная выпечка у нас!  Все права защищены.</p>
+
+    
+    </div>
+
+
+
+
+
+  </div>
+
+
+
+
+
+
+</footer>
+
+
+<script src="js/additionalScript.js"></script>
 </body>
 
 
